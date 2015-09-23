@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>fr.inria.lille.spirals</groupId>
+	<artifactId>introclassJava</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>syllables-dde0a464867a81900c46f3145fe7bca6e64b4bef8bbf11345019454ecb81b3ad41a79a3bd1ae6bd2019b87fa2fbb024ece6af6c5e5540a4ce101451a5a737e81-009</name>
+	<description>introclassJava dataset</description>
+	<inceptionYear>2015</inceptionYear>
+	<properties>
+		<default.encoding>UTF-8</default.encoding>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+		</dependency>
+	</dependencies>
+</project>
