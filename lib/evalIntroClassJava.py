@@ -73,7 +73,7 @@ def processResult(result, results):
 	global equivalentCount, current, startTime, notCompiledCount, toRemove
 	pathJavaProject = os.path.join(rootJavaIntroclass, result['projectName'], result['projectUser'], result['projectUserVersion'])
 	pathCProject    = os.path.join(rootIntroclass, result['projectName'], result['projectUser'], result['projectUserVersion'])
-	classname       = result['projectName'] + "_" + result['projectUser'] + "_" + result['projectUserVersion']
+	classname       = result['projectName'] + "_" + result['projectUser'][0:8] + "_" + result['projectUserVersion']
 	testsPath = os.path.join(rootIntroclass, result['projectName'], 'tests')
 	inputFiles = glob.glob(testsPath + "/whitebox/*.in" )
 	inputFiles += glob.glob(testsPath + "/blackbox/*.in" )
