@@ -580,7 +580,7 @@ def init():
 			ids[projectName] = 1
 		id = ids[projectName]
 		print "%s_%d (%d/%d, %2.2f%%) %s" % (projectName, id, total, totalCfile, float(total) / float(totalCfile) * 100, datetime.timedelta(seconds=int(time.time() - startTime)))
-		className = (projectName + "_" + projectUser + "_" + projectUserVersion)
+		className = (projectName + "_" + projectUser[0:8] + "_" + projectUserVersion)
 		header = """package introclassJava;
 
 class IntObj {public int value; public IntObj(){} public IntObj(int i){value = i;}}
@@ -738,10 +738,10 @@ def createTestClass(file, projectName, projectUser, projectUserVersion):
 	filePath = os.path.join(os.path.dirname(__file__), '../dataset', projectName, projectUser, projectUserVersion, "src/test/java/introclassJava" )
 	if not os.path.exists(filePath):
 		os.makedirs(filePath)
-	fo = open(filePath + '/%sWhiteboxTest.java' % (projectName + '_' + projectUser + '_' + projectUserVersion), 'w+')
-	fo.write(createTest("Whitebox", (projectName + '_' + projectUser + '_' + projectUserVersion), whitebox))
-	fo = open(filePath + '/%sBlackboxTest.java' % (projectName + '_' + projectUser + '_' + projectUserVersion) , 'w+')
-	fo.write(createTest("Blackbox", (projectName + '_' + projectUser + '_' + projectUserVersion), blackbox))
+	fo = open(filePath + '/%sWhiteboxTest.java' % (projectName + '_' + projectUser[0:8] + '_' + projectUserVersion), 'w+')
+	fo.write(createTest("Whitebox", (projectName + '_' + projectUser[0:8] + '_' + projectUserVersion), whitebox))
+	fo = open(filePath + '/%sBlackboxTest.java' % (projectName + '_' + projectUser[0:8] + '_' + projectUserVersion) , 'w+')
+	fo.write(createTest("Blackbox", (projectName + '_' + projectUser[0:8] + '_' + projectUserVersion), blackbox))
 
 def saveResults():
 	global results, rootDataset
