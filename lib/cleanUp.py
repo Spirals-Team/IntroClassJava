@@ -24,8 +24,11 @@ for program in programs:
 	for user in users:
 		versions = listdir_fullpath(os.path.join(rootDataset, program, user))
 		for version in versions:
-			if os.path.join(program, user, version) not in data:
+			programPath = os.path.join(program, user, version)
+			if (programPath not in data
+				or (data[programPath]["wbko"] == 0 and data[programPath]["bbko"] == 0)):
 				count += 1
+				del data[programPath]
 				shutil.rmtree(os.path.join(rootDataset, program, user, version), ignore_errors=True)
 			else:
 				javaFile = os.path.join(rootDataset, program, user, version, "src/main/java/introclassJava/%s_%s_%s.java" % (program, user, version))
@@ -34,5 +37,7 @@ for program in programs:
 					newJavaFile = os.path.join(rootDataset, program, user, version, "src/main/java/introclassJava/%s_%s_%s.java" % (program, user[0:8], version))
 					os.rename(javaFile, newJavaFile)
 
-
+file = open(introclassJSONPath, "w")
+file.write(json.dumps(data, indent=4, sort_keys=True))
+file.close()
 print count

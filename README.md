@@ -4,15 +4,15 @@ This repository contains the IntroClass for Java.
 
 This benchmark is automatically generated from the IntroClass for C presented in the Autorepair Benchmark Suite, a joint project between Carnegie-Mellon University and the University of Massachusetts. The homepage for the Autorepair Benchmark Suite is located at http://dijkstra.cs.virginia.edu/genprog/resources/autorepairbenchmarks.
 
-| Project   | # wb ok | # wb ko | # bb ok | # bb ko | # all ok | # both ko | # program |
-|-----------|---------|---------|---------|---------|----------|-----------|-----------|
-| digits    |      36 |      60 |      45 |      51 |       21 |        36 |        96 |
-| grade     |      38 |      88 |      37 |      89 |       37 |        88 |       126 |
-| checksum  |       7 |      11 |      11 |       7 |        7 |         7 |        18 |
-| median    |      35 |      48 |      32 |      51 |       26 |        42 |        83 |
-| smallest  |      19 |      45 |      17 |      47 |       12 |        40 |        64 |
-| syllables |      17 |      12 |      16 |      13 |       16 |        12 |        29 |
-|         6 |     152 |     264 |     158 |     258 |      119 |       225 |       416 |
+| Project   | # wb ok | # wb ko | # bb ok | # bb ko | # both ko | # program |
+|-----------|---------|---------|---------|---------|-----------|-----------|
+| digits    |      15 |      60 |      24 |      51 |        36 |        75 |
+| grade     |       1 |      88 |       0 |      89 |        88 |        89 |
+| checksum  |       0 |      11 |       4 |       7 |         7 |        11 |
+| median    |       9 |      48 |       6 |      51 |        42 |        57 |
+| smallest  |       7 |      45 |       5 |      47 |        40 |        52 |
+| syllables |       1 |      12 |       0 |      13 |        12 |        13 |
+|         6 |      33 |     264 |      39 |     258 |       225 |       297 |
 
 
 ## Directory Overview
