@@ -1,9 +1,24 @@
-# IntroClass Java
+# IntroClassJava: A Benchmark of Buggy Java Programs
 
-This repository contains the IntroClass for Java.
+If you use IntroClassJava, please cite the following technical report:
 
-This benchmark is automatically generated from the IntroClass for C presented in the Autorepair Benchmark Suite, a joint project between Carnegie-Mellon University and the University of Massachusetts. The homepage for the Autorepair Benchmark Suite is located at http://dijkstra.cs.virginia.edu/genprog/resources/autorepairbenchmarks.
+Thomas Durieux and Martin Monperrus. "[IntroClassJava: A Benchmark of  297 Small and Buggy Java Programs](https://hal.archives-ouvertes.fr/hal-01272126/document)". Technical Report hal-01272126, University of Lille; 2015. 
 
+```
+@techreport{durieux:hal-01272126,
+  TITLE = {{IntroClassJava: A Benchmark of  297 Small and Buggy Java Programs}},
+  AUTHOR = {Durieux, Thomas and Monperrus, Martin},
+  URL = {https://hal.archives-ouvertes.fr/hal-01272126/document},
+  INSTITUTION = {{Universite Lille 1}},
+  YEAR = {2016},
+  HAL_ID = {hal-01272126},
+}
+```
+
+
+This benchmark has been automatically generated from the IntroClass benchmark for C from the Autorepair Benchmark Suite, a joint project between Carnegie-Mellon University and the University of Massachusetts (<http://repairbenchmarks.cs.umass.edu/>).
+
+## Main statistics
 | Project   | # wb ok | # wb ko | # bb ok | # bb ko | # both ko | # program |
 |-----------|---------|---------|---------|---------|-----------|-----------|
 | digits    |      15 |      60 |      24 |      51 |        36 |        75 |
