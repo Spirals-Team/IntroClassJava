@@ -67,7 +67,7 @@ srcml --language=C --literal --operator --modifier `find  IntroClass -name "*.c"
 The folder ```dataset``` contains the assignment programs:
 
 * checksum -- compute a simple checksum of a string
-* digits -- compute the number of digits in an integer
+* digits -- reverse the digits of an integer "123" -> "321"
 * grade -- compute the letter grade corresponding to a percentage
 * median -- give the median of three numbers
 * smallest -- give the smallest of three numbers
