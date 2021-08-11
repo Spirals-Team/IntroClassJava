@@ -11,7 +11,7 @@ Thomas Durieux and Martin Monperrus. "[IntroClassJava: A Benchmark of  297 Small
   URL = {https://hal.archives-ouvertes.fr/hal-01272126/document},
   INSTITUTION = {{Universite Lille 1}},
   YEAR = {2016},
-  HAL_ID = {hal-01272126},
+  NUMBER = {hal-01272126},
 }
 ```
 
